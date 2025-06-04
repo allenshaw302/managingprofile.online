@@ -1,0 +1,836 @@
+html.plusOne,html.plusOne body {
+    font-size: 11px
+}
+
+html.minusOne,html.minusOne body {
+    font-size: 9px
+}
+
+*,a {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: 0;
+    text-decoration: none
+}
+
+.keyboard :focus,.keyboard a:focus {
+    box-shadow: inset 0 0 2px 2px #ea6b9e
+}
+
+.keyboard a:focus img {
+    box-shadow: 0 0 2px 2px #ea6b9e
+}
+
+.mouse :focus,.mouse a:focus {
+    box-shadow: none
+}
+
+.accessibility * {
+    line-height: 1.5!important
+}
+
+.accessibility .topStrip .container {
+    position: relative
+}
+
+.accessibility .topStrip {
+    background-color: #595959;
+    transition: all .2s ease 0s;
+    position: relative;
+    z-index: 10002
+}
+
+.accessibility .topStrip ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right
+}
+
+.accessibility .topStrip ul li {
+    position: relative;
+    padding: 5px 20px;
+    float: left
+}
+
+.accessibility .topStrip ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    line-height: 28px!important;
+    padding: 0 5px
+}
+
+.accessibility .topStrip ul li a:focus {
+    background: #000
+}
+
+.accessibility .topStrip ul li:after {
+    height: 14px;
+    width: 1px;
+    background: #c4c3c3;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -6px
+}
+
+.accessibility .topStrip ul li:last-child:after {
+    display: none
+}
+
+.accessibility .fontResize input {
+    border: 0;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 0;
+    display: inline-block;
+    margin: 0 4px;
+    vertical-align: middle
+}
+
+.accessibility #accessControl input {
+    border: 0;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: 0;
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: middle;
+    float: left;
+    height: 28px;
+    background-color: #595959;
+    color: #fff;
+    outline: 0;
+    width: 28px;
+    margin-right: 2px
+}
+
+.accessibility #accessControl input:focus {
+    background: #000
+}
+
+.accessibility #accessControl .contrastView {
+    float: left
+}
+
+.accessibility #accessControl .contrastView input:focus {
+    background: #ae285d;
+    color: #000
+}
+
+.accessibility #accessControl .contrastChanger {
+    padding: 0;
+    margin: 0;
+    width: 24px;
+    height: 28px;
+    background-color: #fff;
+    border: 0;
+    overflow: hidden;
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.accessibility #accessControl .contrastChanger.normal {
+    color: #000;
+    position: relative;
+    top: 3px;
+    height: 22px;
+    margin-right: 15px
+}
+
+.accessibility #accessControl .contrastChanger.wob {
+    background: #000;
+    color: #fff;
+    position: relative;
+    top: 3px;
+    height: 22px;
+    border: 1px solid #fff
+}
+
+.accessibility .showOnTab {
+    color: #fff!important;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.accessibility .showOnTab:focus {
+    opacity: 1;
+    z-index: 99999
+}
+
+.accessibility .linkDiv a {
+    font-size: 1.4rem
+}
+
+.accessibility .topBand .navbar-nav li.open a.searchMenuLink .search {
+    background: url(../images/sprite.png) no-repeat 8px -380px
+}
+
+.accessibility .wob,.accessibility .wob .offerJustUwrap {
+    background-color: #000
+}
+
+.accessibility .wob .comBox h2,.accessibility .wob .otherInfoBlocks .calcEase ul li a,.accessibility .wob .otherInfoBlocks .infoBox h4,.accessibility .wob .otherInfoBlocks .infoBox p,.accessibility .wob .otherInfoBlocks .infoBox p .wob .footerMainUl h3 a,.accessibility .wob .productsView ul li .productBox h4,.accessibility .wob .topMenu .navbarSect ul li a {
+    color: #80ff00
+}
+
+.accessibility .wob .footerUpSec {
+    background-color: #202020
+}
+
+.accessibility .wob #accessControl input,.accessibility .wob .bannerWrapper .owlC2 a,.accessibility .wob .copyright,.accessibility .wob .footerUpSec .footerMainUl a,.accessibility .wob .footerUpSec .footerMainUl h3,.accessibility .wob .footerUpSec .footerMainUl h3 a,.accessibility .wob .footerUpSec .footerMainUl p,.accessibility .wob .footerUpSec .middleFooterCon a,.accessibility .wob .footerUpSec .middleFooterCon h3,.accessibility .wob .footerUpSec .middleFooterCon p,.accessibility .wob .loanDesigned ul li .loanBox a,.accessibility .wob .mobLnk ul li a,.accessibility .wob .otherInfoBlocks .digitalBank .infoBox h5,.accessibility .wob .relBlock .controls h6,.accessibility .wob .topMenu .loginSect a,.accessibility .wob .topStrip ul li a,.accessibility .wob a:focus,.accessibility .wob a:visited,.accessibility .wob ul.cpDiscMap li a {
+    color: #80ff00
+}
+
+.accessibility .wob .reportFraud,.accessibility .wob .topMenu .loginSect .loginClk {
+    background-color: #000;
+    box-shadow: none
+}
+
+.accessibility .wob .btnWrap .linkBtn.whtOnly,.accessibility .wob .callbackCharm,.accessibility .wob .callbackCharm a,.accessibility .wob .callbackCharm h2,.accessibility .wob .callbackCharm ul li,.accessibility .wob .ratesCharm,.accessibility .wob .ratesCharm a,.accessibility .wob .ratesCharm h2,.accessibility .wob .ratesCharm ul li,.accessibility .wob .ratesCharm ul li a,.accessibility .wob .topBand,.accessibility .wob .viewAll {
+    background-color: #222;
+    color: #80ff00
+}
+
+.accessibility .wob .button--accept,.accessibility .wob .fdRatesBox .rates,.accessibility .wob .getACallBox .callback {
+    background: #222
+}
+
+.accessibility .wob .banner-title strong,.accessibility .wob .controls .icon-drop:before,.accessibility .wob .fdRatesBox .rates,.accessibility .wob .fdRatesBox .rates:before,.accessibility .wob .ftLinks a,.accessibility .wob .getACallBox .callback,.accessibility .wob .getACallBox .callback:before,.accessibility .wob .icon-Li-footer:before,.accessibility .wob .icon-Twitter-footer:before,.accessibility .wob .icon-YT-footer:before,.accessibility .wob .icon-fb-footer:before,.accessibility .wob .icon-insta-footer:before,.accessibility .wob .linkDiv a.linkEffect,.accessibility .wob .maroontheme .topBand .navbar-right li.getInTouch .getCon a,.accessibility .wob .mobileMenu .menuSect .mlink h3,.accessibility .wob .mobileMenu .menuSect .mlink h3 a,.accessibility .wob .offersWrapper ul li .offerInfo .offerShareBox .offerValidity,.accessibility .wob .topBand .navbar-nav a,.accessibility .wob .topBand .navbar-nav a.iconLink.search span,.accessibility .wob .topBand .navbar-nav a.searchMenuLink span,.accessibility .wob .topMenu .loginSect .loginClk {
+    color: #80ff00
+}
+
+.accessibility .wob .back-to-top .icon-drop:before {
+    color: #f980a1
+}
+
+.accessibility .wob .back-to-top {
+    border-color: #f980a1
+}
+
+.accessibility .wob .socialLinks li a {
+    border: 1px solid #80ff00
+}
+
+.accessibility .wob .getInTouch .getCon,.accessibility .wob .nav>li>a:focus,.accessibility .wob .nav>li>a:hover,.accessibility .wob .offersWrapper ul li .offerInfo .offerShareBox {
+    background-color: #000
+}
+
+.accessibility .wob .topMenu .loginDrpDown {
+    background: #000
+}
+
+.accessibility .wob .topMenu .loginDrpDown h2 {
+    color: #6dd406
+}
+
+.accessibility .wob .topMenu .loginDrpDown .accordian {
+    background: #222
+}
+
+.accessibility .wob .topMenu .loginDrpDown .accordian ul li h3 {
+    color: #6dd406
+}
+
+.accessibility .wob .topMenu .navbarSect ul li .subMenus {
+    background: #000
+}
+
+.accessibility .wob #accessControl .contrastChanger.normal {
+    color: #000
+}
+
+.accessibility .wob .topMenu .navbarSect ul li .subMenus .grayClr {
+    background: #222
+}
+
+.accessibility .wob .topBand .navbar-nav a.iconLink.notification {
+    background-position: 8px -480px
+}
+
+.accessibility .wob .topMenu .navbarSect ul li .subMenus .blck ul li a,.accessibility .wob .topMenu .navbarSect ul li .subMenus .mainSect .sLevel ul li .noHover,.accessibility .wob .topMenu .navbarSect ul li .subMenus .tabBar ul li .active,.accessibility .wob .topMenu .navbarSect ul li .subMenus .tabBar ul li a {
+    color: #7af202
+}
+
+.accessibility .wob .topMenu .navbarSect ul li .subMenus .blck ul li a:focus,.accessibility .wob .topMenu .navbarSect ul li .subMenus .blck ul li a:hover,.accessibility .wob .topMenu .navbarSect ul li .subMenus .mainSect .sLevel ul li .noHover:focus,.accessibility .wob .topMenu .navbarSect ul li .subMenus .mainSect .sLevel ul li .noHover:hover,.accessibility .wob .topMenu .navbarSect ul li .subMenus .tabBar ul li .active:focus,.accessibility .wob .topMenu .navbarSect ul li .subMenus .tabBar ul li .active:hover,.accessibility .wob .topMenu .navbarSect ul li .subMenus .tabBar ul li a:focus,.accessibility .wob .topMenu .navbarSect ul li .subMenus .tabBar ul li a:hover {
+    color: #7af202
+}
+
+.accessibility .wob .topMenu .navbarSect ul li .subMenus .tabBar {
+    background: #222
+}
+
+.accessibility .wob .accessLinks>ul h4 a,.accessibility .wob .accessLinks>ul h5,.accessibility .wob .accessLinks>ul ul li a,.accessibility .wob .expProdCont h2,.accessibility .wob .locateUsBox h3,.accessibility .wob .locateUsBox li a,.accessibility .wob .offerMobBox h3,.accessibility .wob .offerMobBox li a,.accessibility .wob .otherInfoBlocks .progressBlog .linkDiv span,.accessibility .wob .topMenu .loginDrpDown .accordian ul li .logLinks a,.accessibility .wob .topMenu .loginDrpDown .accordian ul li a,.accessibility .wob .topMenu .navbarSect ul li .subMenus .blck .subBlck h4 a,.accessibility .wob .topMenu .navbarSect ul li .subMenus .blck h3,.accessibility .wob .topMenu .navbarSect ul li .subMenus .blck h3 a,.accessibility .wob .topMenu .navbarSect ul li .subMenus .mainSect .fLevel ul li a,.accessibility .wob .topMenuNewWrapper .downLoadBox .downloadRhs p,.accessibility .wob .topMenuNewWrapper .menuBody,.accessibility .wob .topMenuNewWrapper .menuBody a,.accessibility .wob .topMenuNewWrapper .menuBody li p,.accessibility .wob .topMenuNewWrapper .menuHead,.accessibility .wob .topMenuNewWrapper .searchInptBox input,.accessibility .wob .topMenuNewWrapper ul.savings,.accessibility .wob ul.savings li div a,.accessibility .wob ul.savings li div p,.accessibility .wob ul.savings li div span,.accessibility .wob ul.savings li h3 {
+    color: #80ff00
+}
+
+.accessibility .wob .topMenuNewWrapper .menuBody li span.borderRgt {
+    border-bottom: 1px solid #80ff00
+}
+
+.accessibility .wob .js-colseBtn:after,.accessibility .wob .js-colseBtn:before,.accessibility .wob .mobileMenu .closebtn:after,.accessibility .wob .mobileMenu .closebtn:before {
+    background-color: #fff
+}
+
+.accessibility .wob .list-unstyled li:not(.init),.accessibility .wob .topMenuNewWrapper .downLoadBox {
+    background: #000
+}
+
+.accessibility .wob .ftLinks,.accessibility .wob .mobiNav,.accessibility .wob .mobileMenu,.accessibility .wob .mobileMenu .topH {
+    background: #000
+}
+
+.accessibility .wob .mobileMenu .menuSect .mlink .closeTab:after,.accessibility .wob .mobileMenu .menuSect .mlink .openTab:after,.accessibility .wob .mobileMenu .menuSect .sLevelM .closeTab:after,.accessibility .wob .mobileMenu.buisMobiHeadear .menuSect .sLevelM h4.closeTab:after {
+    color: #949494
+}
+
+.accessibility .wob .mobileMenu .menuSect .sLevelM ul li a,.accessibility .wob .mobileMenu.buisMobiHeadear .menuSect .sLevelM h4,.accessibility .wob .mobileMenu.buisMobiHeadear .menuSect .subLnks>ul li a {
+    color: #80ff00
+}
+
+.accessibility .wob .mobileMenu .menuSect .sLevelM ul {
+    color: #80ff00;
+    background: #565656
+}
+
+.accessibility .wob .mobileMenu .menuSect .mlink .subLnks {
+    color: #80ff00;
+    background: #474747
+}
+
+.accessibility .wob .topMenu .navbarSect ul .srw:after {
+    border-bottom-color: #000
+}
+
+.accessibility .wob .toolTipShow {
+    background: #000
+}
+
+.accessibility .wob .lblResult_new {
+    background: #000
+}
+
+.accessibility .wob .topBand .navbar-nav a.searchMenuLink .search {
+    background: url(../images/sprite.png) no-repeat 8px -379px
+}
+
+.accessibility .wob .axisbandText p a,.accessibility .wob .topbandBg .bandtextArea p {
+    color: #80ff00!important
+}
+
+.accessibility .wob .axisbandText p a {
+    border-bottom: solid 1px #80ff00
+}
+
+.accessibility.plusOne .topMenu .navbarSect {
+    margin-left: 1rem
+}
+
+.accessibility .wob .axisbandText p a,.accessibility .wob .topbandBg .bandtextArea p {
+    color: #80ff00!important
+}
+
+.accessibility .wob .axisbandText p a {
+    border-bottom: solid 1px #80ff00
+}
+
+.accessibility.plusOne .topMenu .navbarSect {
+    margin-left: 1rem
+}
+
+.accessibility.plusOne .topMenu .navbarSect ul li a {
+    padding: 2.6rem .5rem 3.2rem
+}
+
+.accessibility.plusOne .topMenu .loginSect .loginClk {
+    padding: 1rem 2rem
+}
+
+.accessibility.plusOne .topMenu .navbarSect ul li .subMenus {
+    left: 0
+}
+
+.accessibility.plusOne .fdRatesBox .rates {
+    left: -8.8rem;
+    top: 5rem;
+    padding: .7rem 0 0 56px;
+    text-decoration: none
+}
+
+.accessibility.plusOne .getACallBox .callback {
+    left: 19.8rem;
+    top: 5.7rem;
+    text-decoration: none;
+    padding: .5rem 0 0 5.5rem
+}
+
+.accessibility.plusOne .toolTipShow {
+    left: 190px
+}
+
+.accessibility.plusOne .back-to-top .icon-drop {
+    top: 15px
+}
+
+.accessibility.plusOne .productsView ul li {
+    margin-left: 1.7rem
+}
+
+.accessibility.plusOne .navbar-left li {
+    padding: 0 2rem 0 0
+}
+
+.accessibility.plusOne .otherInfoBlocks .viewallLink {
+    bottom: 8px
+}
+
+.accessibility.plusOne .middleFooterCon h3 {
+    width: 12%
+}
+
+.accessibility.plusOne .topBand .navbar-nav a.searchMenuLink .search {
+    top: 0;
+    left: 8px
+}
+
+.accessibility.plusOne .linkDiv a {
+    position: relative;
+    top: .5rem
+}
+
+.accessibility.plusOne .otherInfoBlocks .infoBox h4,.accessibility.plusOne .otherInfoBlocks .infoBox p {
+    padding-bottom: .2rem
+}
+
+.accessibility.plusOne .maroontheme .topMenu .loginSect {
+    padding: 1.5rem 0 0
+}
+
+.accessibility.plusOne .maroontheme .topMenu .navbarSect {
+    margin-left: 3.5rem
+}
+
+.accessibility.plusOne .maroontheme .topMenu .navbarSect ul.mainNav>li>a {
+    padding: 2.6rem .5rem 2rem
+}
+
+.accessibility.plusOne .maroontheme .topMenu .navbarSect ul.mainNav>li .subMenus {
+    top: 6.2rem
+}
+
+.accessibility.minusOne .getACallBox .callback {
+    left: 20rem;
+    top: 5.3rem
+}
+
+.accessibility.minusOne .fdRatesBox .rates {
+    top: 4.55rem
+}
+
+.accessibility.minusOne .maroontheme .topMenu .loginSect {
+    padding: 1.5rem 0 0
+}
+
+.accessibility.minusOne .maroontheme .topMenu .navbarSect {
+    margin-left: 3.5rem
+}
+
+.accessibility.minusOne .maroontheme .topMenu .navbarSect ul.mainNav>li>a {
+    padding: 3rem 1.5rem 2.86rem
+}
+
+.accessibility.minusOne .maroontheme .topMenu .navbarSect ul.mainNav>li .subMenus {
+    top: 8rem
+}
+
+.accessibility .wob .maroontheme {
+    background: #000
+}
+
+.accessibility .wob .maroontheme .topBand {
+    background-color: #fff0
+}
+
+.accessibility .wob .maroontheme .topMenu .whitebg {
+    background: #222 url(../images/menucurve-wbo.jpg) no-repeat
+}
+
+.accessibility .wob .maroontheme .topMenu .whitebg:after {
+    background-color: #222
+}
+
+.accessibility .wob .maroontheme .topMenu .whitebg .loginSectMob ul li {
+    background-color: #222
+}
+
+.accessibility .wob .maroontheme:after {
+    background-color: #222
+}
+
+.accessibility .wob .preapprovedOffers {
+    background: #313131
+}
+
+.accessibility .wob .preapprovedOffers p {
+    color: #80ff00
+}
+
+.accessibility .wob .inner_Vsearch {
+    background-color: #222!important
+}
+
+.accessibility .wob .inner_Vsearch .searchInptBox .voicesearch {
+    border: .7rem solid #7d7b7b
+}
+
+.accessibility .wob .calculatePlanBox ul li a {
+    background: #313131
+}
+
+.accessibility .wob .calculatePlanBox ul li a span {
+    color: #80ff00
+}
+
+.accessibility .wob .calculatePlanBox ul li a .planSmtrIcon:before {
+    color: #80ff00
+}
+
+.accessibility .wob .calculatePlanBox ul li a:hover {
+    background: #565555
+}
+
+.accessibility .wob .calculatePlanBox ul li a:hover .planSmtrIcon:before {
+    color: #fff
+}
+
+.accessibility .wob .newComBox p {
+    color: #80ff00
+}
+
+.accessibility a:active,.accessibility a:hover,.accessibility a:visited {
+    outline-width: 0;
+    box-shadow: none
+}
+
+.accessibility .home.wob :focus,.accessibility .home.wob a:active,.accessibility .home.wob a:focus,.accessibility .home.wob a:visited {
+    box-shadow: inset 0 0 2px 2px #fff
+}
+
+.accessibility .topMenu .loginDrpDown .accTitle {
+    display: block;
+    text-decoration: none
+}
+
+.accessibility .topBand .navbar-nav li.open a.searchMenuLink span {
+    color: #fff
+}
+
+.accessibility .topBand .navbar-nav a {
+    color: #373737
+}
+
+.accessibility .topBand .navbar-nav a.searchMenuLink span {
+    color: #ae285d;
+    display: inline-block;
+    padding-left: 2.5rem
+}
+
+.accessibility .topBand .navbar-nav a.searchMenuLink .search {
+    background: url(../images/sprite.png) no-repeat 6px 8px;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: 0;
+    top: -4px
+}
+
+.accessibility .topBand .navbar-nav a.searchMenuLink .search:focus span,.accessibility .topBand .navbar-nav a.searchMenuLink .search:hover span {
+    color: #ed1164
+}
+
+.accessibility .fdRatesBox .rates,.accessibility .getACallBox .callback {
+    background: #595959
+}
+
+.topMenuOpen .overLay {
+    display: block!important
+}
+
+.accessibility .home.wob .mobLnk .viewAllNLess a {
+    color: #80ff00
+}
+
+.callbackCharm,.ratesCharm {
+    z-index: 2;
+    position: relative
+}
+
+.fdRatesBox {
+    z-index: 99
+}
+
+.fdRatesBox .rates:before {
+    height: 42px
+}
+
+.wob .maroontheme .topBand .navbar-right a.js-changeLanguage,.wob .maroontheme .topMenu .navbar-right a.js-changeLanguage {
+    background-color: #595959
+}
+
+.wob .maroontheme .topBand .navbar-right .langList li a,.wob .maroontheme .topMenu .navbar-right .langList li a {
+    background-color: #595959;
+    color: #80ff00
+}
+
+.accessibility .wob a {
+    color: #80ff00
+}
+
+.accessibility .wob .back-to-top {
+    border-color: #80ff00
+}
+
+.accessibility .wob .back-to-top .icon-drop:before {
+    color: #80ff00
+}
+
+.accessibility .wob .sf_colsIn h4 {
+    color: #80ff00
+}
+
+.accessibility.plusOne .otherInfoBlocks .progressBlog {
+    padding-bottom: .2rem
+}
+
+.accessibility .linkEffect {
+    top: 1px;
+    left: 1px
+}
+
+.accessibility .closebtn {
+    display: none;
+    width: 50px
+}
+
+.accessibility .viewAll:focus {
+    color: #fff
+}
+
+.accessibility .linkEffect {
+    top: 1px;
+    left: 1px
+}
+
+.accessibility.plusOne .navbar-left li {
+    padding: 0 1.5rem 0 0
+}
+
+.accessibility .otherInfoBlocks .infoBox h4 {
+    font-size: 1.8rem
+}
+
+.accessibility .wob #productDealsPopup .modal-body p {
+    color: #80ff00
+}
+
+.accessibility .wob #productDealsPopup .modal-content {
+    background: #333
+}
+
+.accessibility .wob #productDealsPopup .btnLinks a {
+    color: #80ff00;
+    border: 1px solid #222;
+    background: #222!important
+}
+
+.accessibility .wob .ab_accordTab .panel .panel-heading a,.accessibility .wob .articleWrap .articleCarousel .imgContent .dated,.accessibility .wob .articleWrap .progressUsBox .rgtSide h4,.accessibility .wob .axisSafe .axisSafeCarousel .owl-carousel .owl-nav .as_navBtn,.accessibility .wob .axisSafe .progressUsSlider .owl-carousel .owl-nav .as_navBtn,.accessibility .wob .axnri-artclCont .artclCont-hdr h2,.accessibility .wob .axnri-artclCont .artclCont-hdr h3,.accessibility .wob .bankingWrap,.accessibility .wob .dilsethankWrap .thankContentWrap .contentThanks p,.accessibility .wob .newComBox h2,.accessibility .wob .titleAbt {
+    color: #80ff00
+}
+
+.keyboard .axnri-artclCont .artclCont-hdr .btn-socials li a,.keyboard .maroontheme .topMenu .hamburger,.keyboard .mobileMenu .menuSect .mlink h3 {
+    box-shadow: inset 0 0 2px 2px #ea6b9e
+}
+
+@media only screen and (max-width: 1400px) {
+    .accessibility .fdRatesBox,.accessibility .getACallBox {
+        top:35%
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .accessibility.plusOne .productsView ul li {
+        margin-left:1rem
+    }
+
+    .accessibility.plusOne .maroontheme .topMenu .whitebg {
+        height: 4.9rem
+    }
+
+    .socialLinks li {
+        margin-right: 0
+    }
+
+    .socialLinks li a {
+        width: 2.9rem;
+        height: 2.9rem
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .accessibility.plusOne .productsView ul li {
+        margin-left:0
+    }
+
+    .socialLinks li a.fbLink:focus,.socialLinks li a.fbLink:hover {
+        border: 1px solid #818181;
+        color: #818181
+    }
+
+    .socialLinks li a.fbLink:focus .iconEl:before,.socialLinks li a.fbLink:hover .iconEl:before {
+        color: #818181
+    }
+
+    .socialLinks li a.liLink:focus,.socialLinks li a.liLink:hover {
+        border: 1px solid #818181;
+        color: #818181
+    }
+
+    .socialLinks li a.liLink:focus .iconEl:before,.socialLinks li a.liLink:hover .iconEl:before {
+        color: #818181
+    }
+
+    .socialLinks li a.twtLink:focus,.socialLinks li a.twtLink:hover {
+        border: 1px solid #818181;
+        color: #818181
+    }
+
+    .socialLinks li a.twtLink:focus .iconEl:before,.socialLinks li a.twtLink:hover .iconEl:before {
+        color: #818181
+    }
+
+    .socialLinks li a.ytLink:focus,.socialLinks li a.ytLink:hover {
+        border: 1px solid #818181;
+        color: #818181
+    }
+
+    .socialLinks li a.ytLink:focus .iconEl:before,.socialLinks li a.ytLink:hover .iconEl:before {
+        color: #818181
+    }
+
+    .socialLinks li a.instaLink:focus,.socialLinks li a.instaLink:hover {
+        border: 1px solid #818181;
+        color: #818181
+    }
+
+    .socialLinks li a.instaLink:focus .iconEl:before,.socialLinks li a.instaLink:hover .iconEl:before {
+        color: #818181
+    }
+
+    .accessibility .closebtn {
+        display: block
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .accessibility.plusOne .topMenu .loginSectMob ul li {
+        padding:1rem .5rem
+    }
+
+    .accessibility.plusOne .middleFooterCon h3 {
+        width: 100%
+    }
+
+    .accessibility.plusOne .maroontheme .topMenu .whitebg {
+        height: 3.5rem;
+        background-size: 37px
+    }
+
+    .accessibility.minusOne .maroontheme .topMenu .whitebg {
+        height: 4rem
+    }
+
+    .accessibility .wob .maroontheme .topMenu .whitebg {
+        background-size: 34px
+    }
+
+    .socialLinks {
+        display: block;
+        padding-left: 1.5rem
+    }
+
+    .socialLinks li {
+        padding: 0 .5rem
+    }
+
+    .accessibility .back-to-top {
+        margin-bottom: 10px
+    }
+
+    .accessibility .back-to-top .icon-drop {
+        top: 6px
+    }
+
+    .accessibility .back-to-top {
+        right: 2rem
+    }
+
+    .accessibility .otherInfoBlocks .infoBox {
+        padding: 2rem 1rem 1rem 1rem
+    }
+
+    .accessibility .otherInfoBlocks .progressBlog {
+        padding-bottom: 0
+    }
+
+    .accessibility.plusOne .viewallLink .linkDiv a {
+        top: 0!important
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .accessibility .topStrip ul li {
+        padding:5px 10px
+    }
+
+    .accessibility .topStrip ul li:after {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .accessibility.plusOne .back-to-top .icon-drop {
+        top:30%
+    }
+
+    .accessibility.plusOne .productsView ul li {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .accessibility.plusOne .wob .maroontheme .topMenu .whitebg {
+        background-size:36px
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .accessibility .topStrip ul li {
+        padding:5px 0
+    }
+}
+
+.accessibility h1,
+.accessibility h2,
+.accessibility h3,
+.accessibility h4,
+.accessibility h5,
+.accessibility h6 {
+    font-family: Lato-Bold;
+}
