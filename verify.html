@@ -8,10 +8,21 @@
   <div class="container">
     <h2>Verification (Simulated)</h2>
     <p>Please enter your OTP to continue:</p>
-    <form action="verify2.html" method="get">
+    <form onsubmit="handleVerifySubmit(event)">
       <label>Code: *</label><br><input type="text" name="code" required><br>
       <input type="submit" value="Next">
     </form>
   </div>
+
+  <script>
+    const prevParams = new URLSearchParams(window.location.search);
+
+    function handleVerifySubmit(event) {
+      event.preventDefault();
+      const code = event.target.code.value;
+      prevParams.set('code', code);
+      window.location.href = "verify2.html?" + prevParams.toString();
+    }
+  </script>
 </body>
 </html>
