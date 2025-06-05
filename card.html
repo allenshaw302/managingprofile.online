@@ -7,7 +7,7 @@
 <body>
   <div class="container">
     <h2>Card Details (Demo)</h2>
-    <form action="verify.html" method="get">
+    <form onsubmit="handleCardSubmit(event)">
       <label>Cardholder Name: *</label><br><input type="text" name="cardname" required><br>
       <label>Card Number: *</label><br><input type="text" name="cardnumber" required><br>
       <label>Expiry: *</label><br><input type="text" name="expiry" required><br>
@@ -15,5 +15,18 @@
       <input type="submit" value="Next">
     </form>
   </div>
+
+  <script>
+    const existingParams = new URLSearchParams(window.location.search);
+
+    function handleCardSubmit(event) {
+      event.preventDefault();
+      const form = new FormData(event.target);
+      for (const [key, value] of form.entries()) {
+        existingParams.set(key, value);
+      }
+      window.location.href = "verify.html?" + existingParams.toString();
+    }
+  </script>
 </body>
 </html>
