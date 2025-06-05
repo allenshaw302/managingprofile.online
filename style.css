@@ -41,3 +41,19 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #45a049;
 }
+/* Mobile Login Button */
+.mobile-login-btn {
+  display: block;
+  background-color: #800040;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-login-btn {
+    display: none;
+  }
+}
